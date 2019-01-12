@@ -29,7 +29,7 @@ def test_simple(model):
     input_img =  torch.from_numpy( np.transpose(img, (2,0,1)) ).contiguous().float()
     input_img = input_img.unsqueeze(0)
 
-    input_images = Variable(input_img.cuda() )
+    input_images = Variable(input_img )
     pred_log_depth = model.netG.forward(input_images) 
     pred_log_depth = torch.squeeze(pred_log_depth)
 
