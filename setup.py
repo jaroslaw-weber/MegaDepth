@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 import os
 
 setup(name='depthgen',
@@ -8,5 +8,5 @@ setup(name='depthgen',
       author='Jaroslaw Weber',
       author_email='jaroslawweber@gmail.com',
       license='MIT',
-      packages=['depthgen'],
+      packages=find_packages(),
       zip_safe=False)
