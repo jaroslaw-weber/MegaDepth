@@ -4,7 +4,7 @@ import os
 from torch.autograd import Variable
 from .base_model import BaseModel
 import sys
-import pytorch_DIW_scratch
+from .. import pytorch_DIW_scratch
 
 class HGModel(BaseModel):
     def name(self):

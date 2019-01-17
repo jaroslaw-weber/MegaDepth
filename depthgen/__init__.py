@@ -2,9 +2,9 @@ import torch
 import sys
 from torch.autograd import Variable
 import numpy as np
-from data.data_loader import CreateDataLoader
-from models.models import create_model
-from options.train_options import TrainOptions
+from .data.data_loader import CreateDataLoader
+from .models.models import create_model
+from .options.train_options import TrainOptions
 opt = TrainOptions().parse()  # set CUDA_VISIBLE_DEVICES before import torch
 from skimage import io
 from skimage.transform import resize
