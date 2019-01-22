@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import os
 
 setup(name='depthgen',
-      version='0.1',
+      version='0.2',
       description='generating depth map from single image',
       url='http://github.com/jaroslaw-weber/depthgen',
       author='Jaroslaw Weber',
